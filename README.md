@@ -11,8 +11,7 @@ void logging::init_logging(const std::string& path,
                            bool fatal_handling /* default => true */);
 ```
 
-* **path** => path of the directory where the log file shall be created.
-              The name of the log file shall be *log.txt*.
+* **path** => path of the directory where the log file shall be created. The name of the log file shall be *log.txt*. If no                  path is specified (*empty string*), logs shall be redirected to **stderr**.
 
 * **level** => logging severity level (*logging::INFO or logging:: ERROR and so on*) of the  system. The log messages shall be                logged only if the log message has a higher severity level than this value.
 
